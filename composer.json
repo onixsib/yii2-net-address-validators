@@ -1,0 +1,26 @@
+{
+	"name": "onixsib/yii2-net-address-validators",
+	"description": "Validate IPv4, IPv6 and MAC for Yii 2 Framework.",
+	"keywords": ["yii2", "extension", "validators", "validator", "IPv4", "IPv6", "MAC"],
+	"type": "yii2-extension",
+    "homepage": "http://onixsib.ru",
+    "license": "BSD 3-Clause",
+    "support": {
+        "issues": "https://github.com/onixsib/yii2-net-address-validators/issues",
+        "source": "https://github.com/onixsib/yii2-net-address-validators"
+    },
+    "authors": [
+        {
+            "name": "OnixSib LLC",
+            "email": "a@onixsib.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+	"autoload": {
+		"psr-4": {
+			"onixsib\\validators\\": ""
+		}
+	}
+}
