@@ -12,9 +12,9 @@ use Yii;
 use yii\validators\Validator;
 
 /**
- * Class NetAddressValidator
+ * Class IPv46alidator
  */
-class NetAddressValidator extends Validator {
+class IPv46alidator extends Validator {
 	/**
 	 * @inheritdoc
 	 */
