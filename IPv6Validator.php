@@ -21,7 +21,7 @@ class IPv46Validator extends Validator {
 	public function init() {
 		parent::init();
 		if ($this->message === null) {
-			$this->message = Yii::t('yii', "{attribute} is invalid.");
+			$this->message = \Yii::t('yii', "{attribute} is invalid.");
 		}
 	}
 
@@ -30,7 +30,7 @@ class IPv46Validator extends Validator {
 
 		// filter_var suxx
 		if (!preg_match('/^(((?=(?>.*?(::))(?!.+\3)))\3?|([\dA-F]{1,4}(\3|:(?!$)|$)|\2))(?4){5}((?4){2}|((2[0-4]|1\d|[1-9])?\d|25[0-5])(\.(?7)){3})\z/i', $string)) {
-			$this->addError($model, $attribute, Yii::t('yii', 'This in not valid IPv6 address {sample}', ['sample' => '::1']));
+			$this->addError($model, $attribute, \Yii::t('yii', 'This in not valid IPv6 address {sample}', ['sample' => '::1']));
 		}
 	}
 }

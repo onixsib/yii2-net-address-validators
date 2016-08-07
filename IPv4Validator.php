@@ -21,7 +21,7 @@ class IPv4Validator extends Validator {
 	public function init() {
 		parent::init();
 		if ($this->message === null) {
-			$this->message = Yii::t('yii', "{attribute} is invalid.");
+			$this->message = \Yii::t('yii', "{attribute} is invalid.");
 		}
 	}
 
@@ -30,7 +30,7 @@ class IPv4Validator extends Validator {
 
 		// filter_var suxx
 		if (!preg_match('/^((2[0-4]|1\d|[1-9])?\d|25[0-5])(\.(?1)){3}\z/', $string)) {
-			$this->addError($model, $attribute, Yii::t('yii', 'This in not valid IPv4 address {sample}', ['sample' => '127.0.0.1']));
+			$this->addError($model, $attribute, \Yii::t('yii', 'This in not valid IPv4 address {sample}', ['sample' => '127.0.0.1']));
 			return false;
 		}
 	}

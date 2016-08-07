@@ -22,7 +22,7 @@ class NetAddressValidator extends Validator {
 	public function init() {
 		parent::init();
 		if ($this->message === null) {
-			$this->message = Yii::t('yii', "{attribute} is invalid.");
+			$this->message = \Yii::t('yii', "{attribute} is invalid.");
 		}
 	}
 
@@ -37,7 +37,7 @@ class NetAddressValidator extends Validator {
 				(preg_match('/^([0-9a-F]{1,2}[\.:-]){5}([0-9a-F]{1,2})$/', $string))
 			)
 		) {
-			$this->addError($model, $attribute, Yii::t('yii', 'This in not valid network address any family'));
+			$this->addError($model, $attribute, \Yii::t('yii', 'This in not valid network address any family'));
 			return false;
 		}
 	}
