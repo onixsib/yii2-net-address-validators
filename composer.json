@@ -5,6 +5,7 @@
 	"type": "yii2-extension",
     "homepage": "http://onixsib.ru",
     "license": "BSD 3-Clause",
+    "version":"1.0.0",
     "support": {
         "issues": "https://github.com/onixsib/yii2-net-address-validators/issues",
         "source": "https://github.com/onixsib/yii2-net-address-validators"
