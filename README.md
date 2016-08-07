@@ -14,6 +14,8 @@ Yii2 Extension that provide validators and features for validate network address
 [![License](https://poser.pugx.org/onixsib/yii2-net-address-validators/license)](https://packagist.org/packages/onixsib/yii2-net-address-validators)
 [![Total Downloads](https://poser.pugx.org/onixsib/yii2-net-address-validators/downloads)](https://packagist.org/packages/onixsib/yii2-net-address-validators)
 [![GitHub issues](https://img.shields.io/github/issues/onixsib/yii2-net-address-validators.svg)](https://github.com/onixsib/yii2-net-address-validators/issues)
+[![Code Climate](https://img.shields.io/codeclimate/github/onixsib/yii2-net-address-validators.svg)](https://codeclimate.com/github/onixsib/yii2-net-address-validators)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/onixsib/yii2-net-address-validators/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/onixsib/yii2-net-address-validators/?branch=master)
 
 Installation
 ------------
