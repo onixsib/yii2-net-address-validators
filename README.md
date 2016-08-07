@@ -9,7 +9,11 @@ Yii2 Extension that provide validators and features for validate network address
 * NetAddressValidator: Validate IPv4 address or IPv4 netmask or IPv6 address or MAC address
  
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
-
+[![Latest Stable Version](https://poser.pugx.org/onixsib/yii2-net-address-validators/v/stable)](https://packagist.org/packages/onixsib/yii2-net-address-validators)
+[![Latest Unstable Version](https://poser.pugx.org/onixsib/yii2-net-address-validators/v/unstable)](https://packagist.org/packages/onixsib/yii2-net-address-validators)
+[![License](https://poser.pugx.org/onixsib/yii2-net-address-validators/license)](https://packagist.org/packages/onixsib/yii2-net-address-validators)
+[![Total Downloads](https://poser.pugx.org/onixsib/yii2-net-address-validators/downloads)](https://packagist.org/packages/onixsib/yii2-net-address-validators)
+[![GitHub issues](https://img.shields.io/github/issues/onixsib/yii2-net-address-validators.svg)](https://github.com/onixsib/yii2-net-address-validators/issues)
 
 Installation
 ------------
