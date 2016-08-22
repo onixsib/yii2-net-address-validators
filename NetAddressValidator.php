@@ -28,18 +28,22 @@ class NetAddressValidator extends Validator {
 
 	public function validateAttribute($model, $attribute) {
 		$string = $model->{$attribute};
-
-// filter_var suxx
-		if (!
-			(
-				(preg_match('/^((2[0-4]|1\d|[1-9])?\d|25[0-5])(\.(?1)){3}\z/', $string)) &&
-				(preg_match('/^(((?=(?>.*?(::))(?!.+\3)))\3?|([\dA-F]{1,4}(\3|:(?!$)|$)|\2))(?4){5}((?4){2}|((2[0-4]|1\d|[1-9])?\d|25[0-5])(\.(?7)){3})\z/i', $string)) &&
-				(preg_match('/^([0-9a-F]{1,2}[\.:-]){5}([0-9a-F]{1,2})$/', $string))
-			)
-		) {
+		if (!$this->validateValue($string)) {
 			$this->addError($model, $attribute, \Yii::t('yii', 'This in not valid network address any family'));
 			return false;
 		}
+		return true;
+	}
+
+	public function validateValue($string) {
+
+// filter_var suxx
+		if ((!preg_match('/^((2[0-4]|1\d|[1-9])?\d|25[0-5])(\.(?1)){3}\z/', $string)) &&
+			(!preg_match('/^(((?=(?>.*?(::))(?!.+\3)))\3?|([\dA-F]{1,4}(\3|:(?!$)|$)|\2))(?4){5}((?4){2}|((2[0-4]|1\d|[1-9])?\d|25[0-5])(\.(?7)){3})\z/i', $string)) &&
+			(!preg_match('/^([0-9a-F]{1,2}[\.:-]){5}([0-9a-F]{1,2})$/', $string))) {
+			return false;
+		}
+		return true;
 	}
 }
 

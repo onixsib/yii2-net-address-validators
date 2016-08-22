@@ -27,12 +27,17 @@ class MACValidator extends Validator {
 
 	public function validateAttribute($model, $attribute) {
 		$string = $model->{$attribute};
-
-		// filter_var suxx
-		if (!preg_match('/^([0-9a-F]{1,2}[\.:-]){5}([0-9a-F]{1,2})$/', $string)) {
+		if (!$this->validateValue($string)) {
 			$this->addError($model, $attribute, \Yii::t('yii', 'This in not valid MAC address {sample}', ['sample' => '00:00:00:00:00:01']));
 			return false;
 		}
+		return true;
+	}
+
+	public function validateValue($string) {
+
+		// filter_var suxx
+		return preg_match('/^([0-9a-F]{1,2}[\.:-]){5}([0-9a-F]{1,2})$/', $string);
 	}
 }
 
