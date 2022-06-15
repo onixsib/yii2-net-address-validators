@@ -17,8 +17,7 @@
         }
     ],
     "require": {
-        "fxp/composer-asset-plugin": "*",
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "^2.0.14"
     },
 	"autoload": {
 		"psr-4": {
